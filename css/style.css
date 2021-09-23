@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+:root{
+    --main-hf-color:#2874f0;
+    --main-back-color:#f0f2f5;
+    --main-font-color:#000;
+    --main-card-color:rgb(255, 255, 255);
+    --main-carditem-color:rgb(234, 245, 241);
+    --main-carditem-hover-color:rgb(193, 200, 198);
+}
+
+.dark{
+    
+    --main-back-color:#0e0d0d;
+    --main-font-color:rgb(255, 255, 255);
+    --main-card-color:rgb(0, 0, 0);
+    --main-carditem-color:rgb(8, 8, 8);
+    --main-carditem-hover-color:rgb(0, 0, 0); 
+}
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+body{
+    background-color: var(--main-back-color);
+    font-family: 'Lato', sans-serif;
+}
+
+header{
+    background-color: var(--main-hf-color);
+    font-family: 'Lato', sans-serif;
+}
+nav{
+    display: flex;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    padding: 0px 45px;
+}
+nav ul{
+    height: 59px;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    
+}
+nav ul li{
+    padding: 0px 13px;
+    list-style: none;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color:rgb(87, 87, 82);
+    font-weight: bolder;
+}
+.search{
+    display: flex;
+    align-items: center;
+    padding: 0px 50px;
+}
+.search input{
+    height:25px;
+    width:30vw;
+    border-radius: 5px;
+    
+}
+.search button{
+    background-color: black;
+    border: 2px black;
+    border-radius: 5px;
+    margin: 14px;
+    padding: 3px;
+}
+
+.contener{
+    min-height: calc(100vh - 59px - 12vh);
+}
+.slider{
+    
+    display: flex;
+    justify-content: center;
+    width: 80vw;
+    margin: 5px auto;
+
+}
+
+
+
+.viewall{
+    display: flex;
+    margin: 5px 30px;
+    justify-content: space-between;
+    color: var(--main-font-color);
+}
+
+.viewall button{
+    margin:  0px 4px 0px 233px;
+    align-items: center;
+    width: 80px;
+    background: #2874f0;
+    color: #fff;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%);
+    border: none;
+
+}
+.viewall button:hover{
+    cursor: pointer;
+}
+
+.card{
+    display: flex;
+    /* grid-template-columns: auto auto auto auto auto;
+    grid-column-gap: 30px; */
+    background-color:  var(--main-card-color);
+    width: 100vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 98vw;
+    margin:10px auto;
+    overflow:hidden;
+   
+}
+.card p{
+    text-align: center;
+}
+footer{
+    background-color: var(--main-hf-color);
+    color: white;
+    height: 12vh;
+    font-family: 'Lato', sans-serif;
+}

@@ -1,0 +1,19 @@
+.flex-alltext-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search button:hover{
+    background-color: rgb(47, 15, 15);
+    padding: 6px;
+    cursor: pointer;
+}
+
+.card-item{
+    background-color: var(--main-carditem-color);
+    margin: 5px 20px;
+    color: var(--main-font-color);
+}
+.card-item:hover{
+    background-color: var(--main-carditem-hover-color);
+}
