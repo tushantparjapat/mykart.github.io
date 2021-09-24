@@ -17,11 +17,7 @@
   .slider {
     height: 25vh;
   }
-}
-
-
-@media only screen and (max-width: 738px){
-    .card {
+   .card {
       display: grid;
       grid-template-row: auto auto auto auto auto;
       grid-column-gap: 20px; 
@@ -29,5 +25,10 @@
       margin: 10px auto;
       overflow: hidden;
     }
+}
+
+
+@media only screen and (max-width: 738px){
+   
 
 }
